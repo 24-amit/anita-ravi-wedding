@@ -29,42 +29,49 @@ import photo4 from "./assets/photo4.jpg";
 import photo5 from "./assets/photo5.jpg";
 import photo6 from "./assets/photo6.jpg";
 
-const weddingDate = new Date("2026-12-11T16:15:00+05:30");
+const weddingDate = new Date("2026-12-11T18:15:00+05:30");
 const events = [
   {
-    date: "WEDNESDAY · 09 DECEMBER 2026",
-    title: "Chaak-Bhaat",
-    time: "10:15 AM",
-    note: "A traditional family celebration to begin the wedding festivities.",
+    date: "THURSDAY · 10 DECEMBER 2026",
+    title: "Mahila Sangeet",
+    time: "12:15 PM",
+    note: "Music, dance, and joyous celebrations with family and friends.",
     icon: "✦",
   },
   {
-    date: "WEDNESDAY · 09 DECEMBER 2026",
-    title: "Lunch",
-    time: "12:15 PM",
-    note: "Join us for lunch at our residence.",
+    date: "THURSDAY · 10 DECEMBER 2026",
+    title: "Chaak & Bhaat",
+    time: "04:15 PM",
+    note: "Traditional maternal blessings and ritual ceremony.",
     icon: "❋",
   },
   {
-    date: "WEDNESDAY · 09 DECEMBER 2026",
-    title: "Lagan & Tikka",
-    time: "02:15 PM",
-    note: "Blessings and rituals with family and friends.",
+    date: "FRIDAY · 11 DECEMBER 2026",
+    title: "Baraat Aagman",
+    time: "06:15 PM",
+    note: "Grand arrival and welcome of the groom's procession (Baraat).",
     icon: "✧",
   },
   {
     date: "FRIDAY · 11 DECEMBER 2026",
-    title: "Ghurchari",
-    time: "11:15 AM",
-    note: "The wedding-day celebrations begin.",
+    title: "Preetibhoj (Dinner)",
+    time: "07:15 PM",
+    note: "Join us for a delicious celebratory wedding feast.",
     icon: "❈",
   },
   {
     date: "FRIDAY · 11 DECEMBER 2026",
-    title: "Departure of Baraat",
-    time: "04:15 PM",
-    note: "The baraat departs from our residence for Khatiwas, Bawal, Rewari.",
+    title: "Gaurwa & Phere",
+    time: "08:15 PM",
+    note: "Auspicious wedding rituals and sacred wedding vows.",
     icon: "✦",
+  },
+  {
+    date: "SATURDAY · 12 DECEMBER 2026",
+    title: "Vidai",
+    time: "Under Starlight",
+    note: "Bidding a warm farewell to the bride (Taro Ki Chhanv Mein).",
+    icon: "✧",
   },
 ];
 
@@ -117,7 +124,7 @@ function App() {
     );
   };
   const copyAddress = async () => {
-    const address = "Dabur Colony, Tosham Bypass Road, Bhiwani, Haryana - 127021";
+    const address = "V.P.O. Khatiwas, Tehsil Bawal, District Rewari, Haryana - 123501";
     try {
       await navigator.clipboard.writeText(address);
       setCopied(true);
@@ -147,7 +154,7 @@ function App() {
           >
             <span className="envelope-flap" />
             <span className="envelope-seal">
-              <span className="alt-a">R</span> <small>&</small> <span className="alt-a">A</span>
+              <span className="alt-a">A</span> <small>&</small> <span className="alt-a">R</span>
             </span>
             <span className="envelope-label">OPEN INVITATION</span>
           </button>
@@ -159,7 +166,7 @@ function App() {
 
       <header className="topbar">
         <a className="brand" href="#home">
-          <span className="alt-a">R</span> <span>&</span> <span className="alt-a">A</span>
+          <span className="alt-a">A</span> <span>&</span> <span className="alt-a">R</span>
         </a>
         <button
           className="mobile-menu"
@@ -189,7 +196,7 @@ function App() {
             <div className="ganesha">ॐ</div>
             <p className="eyebrow">WITH THE BLESSINGS OF THE ALMIGHTY</p>
             <h1 className="script-title">
-              <span className="alt-a">R</span>avi <em>&</em> <span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span>
+              <span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span> <em>&</em> <span className="alt-a">R</span>avi
             </h1>
             <p className="hero-subtitle">
               Joyfully invite you to celebrate their wedding
@@ -200,7 +207,7 @@ function App() {
             <p className="date-line">
               FRIDAY <b>·</b> 11 DECEMBER 2026
             </p>
-            <p className="date-small">Bhiwani, Haryana - 127021</p>
+            <p className="date-small">Gram Khatiwas, Bawal (Rewari), Haryana - 123501</p>
             <a className="text-link" href="#story">
               EXPLORE THE INVITATION <ArrowDown size={14} />
             </a>
@@ -222,37 +229,44 @@ function App() {
           </p>
           <div className="couple-grid">
             <article className="person-card">
-              <img src={groomImg} alt="Groom - Ravi" className="portrait" />
-              <p className="script-name">Ravi</p>
-              <p className="family-label">GRANDSON OF</p>
+              <img src={brideImg} alt="Bride - Anita (Annu)" className="portrait" />
+              <p className="script-name"><span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span></p>
+              <p className="family-label">GRANDDAUGHTER OF</p>
               <p className="family-name">
-                Sh. Rameshwar Jangra
-                <br />& Late Smt. Chander Devi
+                Smt. Sumitra Devi
+                <br />& Late Sh. Jagdish Chandra
               </p>
               <div className="thin-rule" />
-              <p className="family-label">SON OF</p>
+              <p className="family-label">DAUGHTER OF</p>
               <p className="family-name">
-                Smt. Santosh Devi
-                <br />& Sh. Kamal Singh Jangra
+                Smt. Sanjogatta Devi
+                <br />& Sh. Naresh Kumar
+              </p>
+              <div className="thin-rule" />
+              <p className="family-label">FROM</p>
+              <p className="family-name">
+                V.P.O. Khatiwas, Bawal
+                <br />
+                Dist. Rewari, Haryana - 123501
               </p>
             </article>
             <div className="ampersand">
               weds<span>♡</span>
             </div>
             <article className="person-card">
-              <img src={brideImg} alt="Bride - Anita (Annu)" className="portrait" />
-              <p className="script-name"><span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span></p>
-              <p className="family-label">DAUGHTER OF</p>
+              <img src={groomImg} alt="Groom - Ravi" className="portrait" />
+              <p className="script-name">Ravi</p>
+              <p className="family-label">SON OF</p>
               <p className="family-name">
-                Smt. Sanjogatta Devi
-                <br />& Retd. Subedar Naresh Kumar
+                Smt. Santosh Devi
+                <br />& Sh. Kamal Master Ji
               </p>
               <div className="thin-rule" />
               <p className="family-label">FROM</p>
               <p className="family-name">
-                V.P.O. Khatiwas
+                Tosham Road, Bhiwani
                 <br />
-                Bawal, Rewari
+                (Haryana)
               </p>
             </article>
           </div>
@@ -305,9 +319,9 @@ function App() {
           <div className="venue-callout">
             <MapPin size={18} />
             <div>
-              <b>Lunch & wedding preparations venue</b>
+              <b>Venue for all wedding ceremonies</b>
               <span>
-                At Our Residence · Dabur Colony, Tosham Bypass Road, Bhiwani
+                At Our Residence · Gram Khatiwas, Tehsil Bawal, District Rewari, Haryana - 123501
               </span>
             </div>
           </div>
@@ -347,9 +361,9 @@ function App() {
             </div>
             <h3>At Our Residence</h3>
             <p>
-              Dabur Colony, Tosham Bypass Road
+              Gram Khatiwas, Tehsil Bawal
               <br />
-              Bhiwani, Haryana - 127021, India
+              District Rewari, Haryana - 123501, India
             </p>
             <div className="venue-actions">
               <button className="outline-button" onClick={copyAddress}>
@@ -358,7 +372,7 @@ function App() {
               </button>
               <a
                 className="gold-button"
-                href="https://maps.app.goo.gl/LDERaCan2znCrsfW6"
+                href="https://maps.app.goo.gl/btpmq961J7Dqt2nq9"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -366,9 +380,9 @@ function App() {
               </a>
             </div>
             <p className="venue-note">
-              The baraat will depart from our residence for
+              We cordially invite you to grace the occasion with your presence at our residence in
               <br />
-              <b>V.P.O. Khatiwas, Bawal, Rewari</b>.
+              <b>Gram Khatiwas, Tehsil Bawal, District Rewari (Haryana) - 123501</b>.
             </p>
           </div>
         </section>
@@ -384,49 +398,91 @@ function App() {
             join us and bless the couple.
           </p>
           <p className="script-signoff">
-            <span className="alt-a">R</span>avi <span>&</span> <span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span>
+            <span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span> <span>&</span> <span className="alt-a">R</span>avi
           </p>
           <div className="rsvp-divider">
             <span>✦</span>
           </div>
-          <p className="family-label">RSVP</p>
-          <h3 className="rsvp-name">Kamal Singh Jangra</h3>
+          <p className="family-label">PRESHAK (HOST)</p>
+          <h3 className="rsvp-name">Sh. Naresh Kumar</h3>
+          <p className="family-label" style={{ marginTop: "0.25rem", fontStyle: "italic" }}>
+            (Son of Late Sh. Jagdish Chandra)
+          </p>
           <p className="rsvp-address">
-            Jangra Bhawan, Gali No. 09
+            Gram Khatiwas, Tehsil Bawal
             <br />
-            Tosham Bypass Road, Dabur Colony
-            <br />
-            Near Chara Mandi, Bhiwani (Haryana) - 127021
+            District Rewari, Haryana - 123501
           </p>
-          <a className="phone-link" href="tel:+918295327700">
-            <Phone size={15} /> +91 82953 27700 (Kamal Singh Jangra)
+          <a className="phone-link" href="tel:+917056236171">
+            <Phone size={15} /> +91 70562 36171 (Sh. Naresh Kumar)
           </a>
           <br />
-          <a className="phone-link" href="tel:+919991038113">
-            <Phone size={15} /> +91 99910 38113 (Rameshwar Jangra)
+          <a className="phone-link" href="tel:+919991987246">
+            <Phone size={15} /> +91 99919 87246
           </a>
           <br />
-          <a className="phone-link" href="tel:+918571808859">
-            <Phone size={15} /> +91 85718 08859 (Ravi Jangra)
+          <a className="phone-link" href="tel:+919991987241">
+            <Phone size={15} /> +91 99919 87241
           </a>
-          <p className="little-stars">A SWEET NOTE FROM YASHIKA</p>
+          <br />
+          <a className="phone-link" href="tel:+918491964825">
+            <Phone size={15} /> +91 84919 64825
+          </a>
+
+          <div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+            <div>
+              <p className="little-stars">DARSHANABHILASHI (WITH BEST REGARDS)</p>
+              <p className="stars-quote" style={{ fontSize: "1.05rem", fontStyle: "normal", color: "var(--color-cream-light)" }}>
+                Sh. Dinesh (Dhanna), Sh. Virendra, Harish, Sachin
+              </p>
+            </div>
+            <div>
+              <p className="little-stars">VISHESH AAGRAH (SPECIAL REQUEST)</p>
+              <p className="stars-quote" style={{ fontSize: "1.05rem", fontStyle: "normal", color: "var(--color-cream-light)" }}>
+                Sonu & Priyanka Jangda
+                <br />
+                <span style={{ fontSize: "0.85rem", opacity: 0.85 }}>(Sarpanch, Gram Khatiwas, Dhani Ahiran - 123501)</span>
+              </p>
+            </div>
+            <div>
+              <p className="little-stars">SWAGATKARTA (WELCOMING GUESTS)</p>
+              <p className="stars-quote" style={{ fontSize: "1.05rem", fontStyle: "normal", color: "var(--color-cream-light)" }}>
+                Manish, Praveen, Jitendra (Jeete)
+              </p>
+            </div>
+          </div>
+
+          <p className="little-stars" style={{ marginTop: "2rem" }}>BAL AAGRAH (LITTLE ONES' REQUEST)</p>
           <p className="stars-quote">
-            “Mele Mamu Ki Shaddi Me Julul-Julul Aana”
+            “मीठी-मीठी सर्दी है, सर्दी से ना घबराना।<br/>मेरी बुआ व दीदी की शादी में, जरूर-जरूर आना।।”
           </p>
-          <p className="little-stars">
-            With best compliments from the Jangra family, friends & relatives
+          <p className="family-name" style={{ fontSize: "0.95rem", color: "var(--color-gold-light)", marginTop: "0.5rem" }}>
+            Gunnul, Himanshi, Vaishnavi, Krish, Yash, Dipanshi, Harshita, Parisha, Kiyara
+          </p>
+
+          <p className="little-stars" style={{ marginTop: "2rem" }}>VINEET</p>
+          <p className="stars-quote" style={{ fontSize: "1.1rem", fontStyle: "normal" }}>
+            With best compliments from Baberwal Family, relatives & friends
+          </p>
+          <p style={{ fontSize: "0.85rem", opacity: 0.8, marginTop: "0.25rem" }}>
+            (समस्त बबेरवाल परिवार व स्नेही मित्रगण)
+          </p>
+          <p style={{ fontSize: "0.85rem", fontStyle: "italic", opacity: 0.9, marginTop: "1.25rem", color: "var(--color-gold-light)" }}>
+            * Note: Please accept the invitation of Grihalakshmi through this card as well.
+            <br />
+            (कृप्या गृहलक्ष्मी का बुलावा भी इसी कार्ड द्वारा स्वीकार करे।)
           </p>
         </section>
       </main>
       <footer>
         <a className="brand" href="#home">
-          <span className="alt-a">R</span> <span>&</span> <span className="alt-a">A</span>
+          <span className="alt-a">A</span> <span>&</span> <span className="alt-a">R</span>
         </a>
         <div className="footer-right">
           <a href="#home" aria-label="Back to top">
             <ArrowDown className="up-arrow" />
           </a>
-          <p>MADE WITH LOVE FOR RAVI AND ANITA<br/>BY AMIT</p>
+          <p>MADE WITH LOVE FOR ANITA AND RAVI<br/>BY AMIT</p>
         </div>
       </footer>
     </div>
