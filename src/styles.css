@@ -134,7 +134,7 @@ button {
     align-items: center;
     justify-content: center;
     background: radial-gradient(ellipse at center, rgba(74, 28, 52, 0.35) 0, rgba(33, 11, 24, 0.65) 55%, rgba(22, 6, 16, 0.95) 100%), url("/src/assets/intro-bg.png") no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-color: #160610;
     transition: opacity .8s
@@ -1208,12 +1208,12 @@ img.portrait { object-position: center 60%; }
         left: 0;
         right: 0;
         background: linear-gradient(180deg, rgba(33, 11, 24, 0.98) 0%, rgba(20, 6, 14, 0.99) 100%);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
-        padding: 15px 0 20px;
+        padding: 10px 0 15px;
         border-bottom: 2px solid var(--gold);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
         gap: 0;
     }
 
@@ -1223,15 +1223,26 @@ img.portrait { object-position: center 60%; }
     }
 
     .nav-links a {
-        padding: 16px 24px;
+        padding: 16px 20px;
         width: 100%;
         text-align: center;
-        font-size: 14px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: #f0e2d5;
-        border-bottom: 1px solid rgba(216, 183, 122, 0.12);
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 17px;
+        letter-spacing: 4px;
+        font-weight: 600;
+        color: #f5e8d8;
+        border-bottom: 1px solid rgba(216, 183, 122, 0.15);
         transition: all 0.25s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a .nav-ornament {
+        color: var(--gold);
+        font-size: 10px;
+        opacity: 0.8;
     }
 
     .nav-links a:last-child {
@@ -1240,8 +1251,8 @@ img.portrait { object-position: center 60%; }
 
     .nav-links a:hover,
     .nav-links a:active {
-        color: var(--gold2);
-        background: rgba(200, 165, 109, 0.15);
+        color: #ffffff;
+        background: rgba(200, 165, 109, 0.18);
     }
 
     @keyframes menuSlideDown {
