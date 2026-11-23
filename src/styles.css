@@ -133,7 +133,8 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(ellipse at center, #4a1c34 0, #210b18 55%, #160610 100%);
+    background: radial-gradient(ellipse at center, rgba(74, 28, 52, 0.75) 0, rgba(33, 11, 24, 0.85) 55%, rgba(22, 6, 16, 0.95) 100%), url("/src/assets/gallery1.jpg") no-repeat center center;
+    background-size: cover;
     transition: opacity .8s
 }
 
@@ -1338,5 +1339,6 @@ img.portrait { object-position: center 60%; }
 .script-signoff .nickname {
     font-size: 1em;
 }
+
 
 
