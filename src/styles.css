@@ -201,17 +201,18 @@ button {
     top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 43px;
-    height: 43px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #7a3448;
     color: #f5d8a1;
-    font: 20px 'Cormorant Garamond';
-    box-shadow: 0 2px 8px #0004
+    font: 24px 'Cormorant Garamond';
+    box-shadow: 0 2px 8px #0004;
+    gap: 4px;
 }
-
 .envelope-seal small {
     font: 12px 'Great Vibes'
 }
@@ -1335,5 +1336,6 @@ footer p {
     font-family: "Alex Brush", cursive;
     font-size: 1.1em;
 }
+
 
 
