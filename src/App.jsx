@@ -192,7 +192,7 @@ function App() {
               <span className="alt-a">R</span>avi <em>&</em> <span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span>
             </h1>
             <p className="hero-subtitle">
-              joyfully invite you to celebrate their wedding
+              Joyfully invite you to celebrate their wedding
             </p>
             <div className="hero-rule">
               <span>✦</span>
