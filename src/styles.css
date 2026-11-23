@@ -1342,3 +1342,15 @@ img.portrait { object-position: center 60%; }
 
 
 
+
+.script-title span:not(.alt-a):not(.nickname) {
+    white-space: nowrap;
+}
+@media (max-width: 600px) {
+    .script-title {
+        font-size: clamp(48px, 12vw, 76px);
+        flex-direction: row;
+        gap: 0 8px;
+    }
+}
+
