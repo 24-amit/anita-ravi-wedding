@@ -1229,9 +1229,9 @@ img.portrait { object-position: center 60%; }
 
 .video-wrapper {
     position: relative;
-    max-width: 800px;
+    max-width: 360px;
     margin: 40px auto 30px;
-    padding: 15px;
+    padding: 12px;
     background: linear-gradient(145deg, #2a1020, #180610);
     border: 1px solid #c8a56d80;
     border-radius: 12px;
@@ -1249,7 +1249,7 @@ img.portrait { object-position: center 60%; }
     width: 100%;
     display: block;
     background: #000;
-    aspect-ratio: 16/9;
+    aspect-ratio: 9/16;
     object-fit: cover;
     outline: none;
 }
@@ -1294,5 +1294,48 @@ img.portrait { object-position: center 60%; }
 }
 .script-signoff .nickname {
     font-size: 24px;
+}
+
+
+.alt-a {
+    font-family: "Alex Brush", cursive;
+    font-size: 1.1em;
+}
+.nickname {
+    font-family: "Great Vibes", cursive;
+    font-style: normal;
+    font-size: 0.9em;
+    opacity: 1;
+    letter-spacing: 0px;
+    margin-left: 8px;
+    vertical-align: baseline;
+}
+.script-name .nickname {
+    font-size: 1em;
+    margin-left: 10px;
+}
+.script-signoff .nickname {
+    font-size: 1em;
+}
+
+
+
+.alt-a {
+    font-family: "Alex Brush", cursive;
+}
+.nickname {
+    font-family: "Great Vibes", cursive;
+    font-size: 0.9em;
+    font-style: normal;
+    opacity: 1;
+    margin-left: 8px;
+    letter-spacing: normal;
+}
+.script-name .nickname {
+    font-size: 1em;
+    margin-left: 10px;
+}
+.script-signoff .nickname {
+    font-size: 1em;
 }
 

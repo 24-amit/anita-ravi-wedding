@@ -154,7 +154,7 @@ function App() {
 
       <header className="topbar">
         <a className="brand" href="#home">
-          R <span>&</span> A
+          <span className="alt-a">R</span> <span>&</span> <span className="alt-a">A</span>
         </a>
         <button
           className="mobile-menu"
@@ -184,7 +184,7 @@ function App() {
             <div className="ganesha">ॐ</div>
             <p className="eyebrow">WITH THE BLESSINGS OF THE ALMIGHTY</p>
             <h1 className="script-title">
-              Ravi <em>&</em> Anita <span className="nickname">(Annu)</span>
+              <span className="alt-a">R</span>avi <em>&</em> <span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span>
             </h1>
             <p className="hero-subtitle">
               joyfully invite you to celebrate their wedding
@@ -254,7 +254,7 @@ function App() {
             </div>
             <article className="person-card">
               <img src={brideImg} alt="Bride - Anita (Annu)" className="portrait" />
-              <p className="script-name">Anita <span className="nickname">(Annu)</span></p>
+              <p className="script-name"><span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span></p>
               <p className="family-label">DAUGHTER OF</p>
               <p className="family-name">
                 Smt. Sanjogatta Devi
@@ -391,7 +391,7 @@ function App() {
             join us and bless the couple.
           </p>
           <p className="script-signoff">
-            Ravi <span>&</span> Anita <span className="nickname">(Annu)</span>
+            <span className="alt-a">R</span>avi <span>&</span> <span className="alt-a">A</span>nita <span className="nickname">(<span className="alt-a">A</span>nnu)</span>
           </p>
           <div className="rsvp-divider">
             <span>✦</span>
@@ -427,7 +427,7 @@ function App() {
       </main>
       <footer>
         <a className="brand" href="#home">
-          R <span>&</span> A
+          <span className="alt-a">R</span> <span>&</span> <span className="alt-a">A</span>
         </a>
         <p>MADE WITH LOVE FOR RAVI AND ANITA (ANNU) BY AMIT</p>
         <a href="#home" aria-label="Back to top">
