@@ -183,7 +183,7 @@ function App() {
             <div className="ganesha">ॐ</div>
             <p className="eyebrow">WITH THE BLESSINGS OF THE ALMIGHTY</p>
             <h1 className="script-title">
-              Ravi <em>&</em> Anita
+              Ravi <em>&</em> Anita (Annu)
             </h1>
             <p className="hero-subtitle">
               joyfully invite you to celebrate their wedding
@@ -234,8 +234,8 @@ function App() {
               weds<span>♡</span>
             </div>
             <article className="person-card">
-              <img src={brideImg} alt="Bride - Anita" className="portrait" />
-              <p className="script-name">Anita</p>
+              <img src={brideImg} alt="Bride - Anita (Annu)" className="portrait" />
+              <p className="script-name">Anita (Annu)</p>
               <p className="family-label">DAUGHTER OF</p>
               <p className="family-name">
                 Smt. Sanjogatta Devi
@@ -372,7 +372,7 @@ function App() {
             join us and bless the couple.
           </p>
           <p className="script-signoff">
-            Ravi <span>&</span> Anita
+            Ravi <span>&</span> Anita (Annu)
           </p>
           <div className="rsvp-divider">
             <span>✦</span>
@@ -387,15 +387,19 @@ function App() {
             Near Chara Mandi, Bhiwani (Haryana)
           </p>
           <a className="phone-link" href="tel:+918295327700">
-            <Phone size={15} /> +91 82953 27700
+            <Phone size={15} /> +91 82953 27700 (Kamal Singh Jangra)
           </a>
           <br />
           <a className="phone-link" href="tel:+919991038113">
-            <Phone size={15} /> +91 99910 38113
+            <Phone size={15} /> +91 99910 38113 (Rameshwar Jangra)
           </a>
-          <p className="little-stars">A SPECIAL NOTE FROM YASHIKA</p>
+          <br />
+          <a className="phone-link" href="tel:+918571808859">
+            <Phone size={15} /> +91 85718 08859 (Ravi)
+          </a>
+          <p className="little-stars">A SWEET NOTE FROM YASHIKA</p>
           <p className="stars-quote">
-            “Mele Mamu Ki Shaddi Me Julul-Julul Aana Hai”
+            “Mele Mamu Ki Shaddi Me Julul-Julul Aana”
           </p>
           <p className="little-stars">
             With best compliments from the Jangra family, friends & relatives
@@ -406,7 +410,7 @@ function App() {
         <a className="brand" href="#home">
           R <span>&</span> A
         </a>
-        <p>MADE WITH LOVE FOR RAVI & ANITA · 2026</p>
+        <p>MADE WITH LOVE FOR RAVI AND ANITA (ANNU) BY AMIT</p>
         <a href="#home" aria-label="Back to top">
           <ArrowDown className="up-arrow" />
         </a>
