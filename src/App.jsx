@@ -319,7 +319,7 @@ function App() {
             Our <i>little gallery</i>
           </h2>
           <p className="section-intro">
-            A place for your favourite memories together.
+            A place for the favourite memories together.
           </p>
           <div className="gallery-masonry">
             <div className="gallery-item"><img src={gallery1} alt="Gallery 1" /></div>
