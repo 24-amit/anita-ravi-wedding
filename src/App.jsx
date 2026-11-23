@@ -414,7 +414,7 @@ function App() {
           </a>
           <br />
           <a className="phone-link" href="tel:+918571808859">
-            <Phone size={15} /> +91 85718 08859 (Ravi)
+            <Phone size={15} /> +91 85718 08859 (Ravi Jangra)
           </a>
           <p className="little-stars">A SWEET NOTE FROM YASHIKA</p>
           <p className="stars-quote">
@@ -429,10 +429,12 @@ function App() {
         <a className="brand" href="#home">
           <span className="alt-a">R</span> <span>&</span> <span className="alt-a">A</span>
         </a>
-        <p>MADE WITH LOVE FOR RAVI AND ANITA (ANNU) BY AMIT</p>
-        <a href="#home" aria-label="Back to top">
-          <ArrowDown className="up-arrow" />
-        </a>
+        <div className="footer-right">
+          <a href="#home" aria-label="Back to top">
+            <ArrowDown className="up-arrow" />
+          </a>
+          <p>MADE WITH LOVE FOR RAVI AND ANITA<br/>BY AMIT</p>
+        </div>
       </footer>
     </div>
   );
