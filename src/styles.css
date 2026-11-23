@@ -1211,18 +1211,17 @@ footer p {
 }
 @media(max-width: 600px) {
     footer {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 20px;
     }
     .footer-right {
-        align-items: center;
+        align-items: flex-end;
     }
     footer p {
-        text-align: center;
+        text-align: right;
     }
 }
-
-
 
 @media(max-width:700px) {
     .topbar {
@@ -1277,7 +1276,8 @@ footer p {
     }
 
     .ampersand {
-        transform: rotate(90deg)
+        transform: none;
+        margin: 10px 0;
     }
 
     .date-number {
@@ -1336,6 +1336,9 @@ footer p {
     font-family: "Alex Brush", cursive;
     font-size: 1.1em;
 }
+
+
+
 
 
 
