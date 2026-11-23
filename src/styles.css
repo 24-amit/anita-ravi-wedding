@@ -743,74 +743,47 @@ img.portrait {
 
 .gallery-grid {
     max-width: 950px;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(200px, auto);
-    gap: 16px;
+    grid-auto-rows: 180px;
+    gap: 12px;
 }
 
 .gallery-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    border: 1px solid rgba(200,165,109,0.3);
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(200, 165, 109, 0.3);
     transition: transform 0.3s ease;
+    object-position: center 20%;
 }
 
 .gallery-photo:hover {
     transform: scale(1.02);
 }
 
-.gallery-photo-1 {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    min-height: 240px;
-    object-position: center 20%;
+.wide-frame {
+    grid-column: span 2;
 }
 
-.gallery-photo-2 {
-    grid-column: 3;
-    grid-row: 1 / 3;
-    min-height: 480px;
-    object-position: center 15%;
+.tall-frame {
+    grid-row: span 2;
 }
 
-.gallery-photo-3 {
-    grid-column: 1;
-    grid-row: 2;
-    min-height: 240px;
-    object-position: center 15%;
+.normal-frame {
+    grid-column: span 1;
 }
 
-.gallery-photo-4 {
-    grid-column: 2;
-    grid-row: 2;
-    min-height: 240px;
-    object-position: center 15%;
+.full-frame {
+    grid-column: 1 / -1;
 }
 
-.gallery-photo-7 {
-    grid-column: 1 / 4;
-    grid-row: 3;
-    min-height: 280px;
-    object-position: center 25%;
-}
-
-.gallery-photo-5 {
-    grid-column: 1;
-    grid-row: 4;
-    min-height: 320px;
-    object-position: center 15%;
-}
-
-.gallery-photo-6 {
-    grid-column: 2 / 4;
-    grid-row: 4;
-    min-height: 320px;
-    object-position: center 15%;
+.wide-tall-frame {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .photo-tip {
@@ -1183,21 +1156,14 @@ img.portrait { object-position: center 60%; }
 @media (max-width: 700px) {
     .gallery-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        grid-auto-rows: auto;
+        gap: 12px;
     }
 
-    .gallery-photo-1,
-    .gallery-photo-2,
-    .gallery-photo-3,
-    .gallery-photo-4,
-    .gallery-photo-5,
-    .gallery-photo-6,
-    .gallery-photo-7 {
-        grid-column: 1 / -1;
-        grid-row: auto;
-        height: auto;
-        min-height: 260px;
-        max-height: 450px;
+    .gallery-photo {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+        height: 220px !important;
     }
 }
 
