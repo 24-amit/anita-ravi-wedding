@@ -1308,15 +1308,12 @@ footer p {
 
 
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
     .intro-screen {
-        background-position: center 30%;
+        background: radial-gradient(ellipse at center, #4a1c34 0, #210b18 55%, #160610 100%);
+        background-color: #210b18;
     }
 }
-@media (min-width: 1400px) {
-    .intro-screen {
-        background-position: center 25%;
-    }
 }
 .envelope-seal .alt-a {
     font-family: "Great Vibes", cursive;
@@ -1326,5 +1323,6 @@ footer p {
     font-family: "Great Vibes", cursive;
     font-size: 0.9em;
 }
+
 
 
