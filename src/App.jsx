@@ -184,7 +184,7 @@ function App() {
             <div className="ganesha">ॐ</div>
             <p className="eyebrow">WITH THE BLESSINGS OF THE ALMIGHTY</p>
             <h1 className="script-title">
-              Ravi <em>&</em> Anita (Annu)
+              Ravi <em>&</em> Anita <span className="nickname">(Annu)</span>
             </h1>
             <p className="hero-subtitle">
               joyfully invite you to celebrate their wedding
@@ -254,7 +254,7 @@ function App() {
             </div>
             <article className="person-card">
               <img src={brideImg} alt="Bride - Anita (Annu)" className="portrait" />
-              <p className="script-name">Anita (Annu)</p>
+              <p className="script-name">Anita <span className="nickname">(Annu)</span></p>
               <p className="family-label">DAUGHTER OF</p>
               <p className="family-name">
                 Smt. Sanjogatta Devi
@@ -391,7 +391,7 @@ function App() {
             join us and bless the couple.
           </p>
           <p className="script-signoff">
-            Ravi <span>&</span> Anita (Annu)
+            Ravi <span>&</span> Anita <span className="nickname">(Annu)</span>
           </p>
           <div className="rsvp-divider">
             <span>✦</span>

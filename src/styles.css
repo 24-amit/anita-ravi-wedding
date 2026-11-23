@@ -1278,3 +1278,21 @@ img.portrait { object-position: center 60%; }
     .video-wrapper { margin: 30px 10px 25px; padding: 10px; }
 }
 
+
+.nickname {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 0.4em;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.script-name .nickname {
+    font-size: 28px;
+    margin-left: 5px;
+}
+.script-signoff .nickname {
+    font-size: 24px;
+}
+
