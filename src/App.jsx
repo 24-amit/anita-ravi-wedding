@@ -28,7 +28,6 @@ import photo3 from "./assets/photo3.jpg";
 import photo4 from "./assets/photo4.jpg";
 import photo5 from "./assets/photo5.jpg";
 import photo6 from "./assets/photo6.jpg";
-import photo7 from "./assets/photo7.jpg";
 
 const weddingDate = new Date("2026-12-11T16:15:00+05:30");
 const events = [
@@ -322,19 +321,18 @@ function App() {
           <p className="section-intro">
             A place for your favourite memories together.
           </p>
-          <div className="gallery-grid">
-            <img src={gallery2} alt="Gallery 2" className="gallery-photo wide-frame" />
-            <img src={gallery1} alt="Gallery 1" className="gallery-photo tall-frame" />
-            <img src={gallery3} alt="Gallery 3" className="gallery-photo tall-frame" />
-            <img src={gallery4} alt="Gallery 4" className="gallery-photo normal-frame" />
-            <img src={gallery5} alt="Gallery 5" className="gallery-photo wide-frame" />
-            <img src={photo1} alt="Photo 1" className="gallery-photo wide-frame" />
-            <img src={photo2} alt="Photo 2" className="gallery-photo tall-frame" />
-            <img src={photo3} alt="Photo 3" className="gallery-photo normal-frame" />
-            <img src={photo4} alt="Photo 4" className="gallery-photo normal-frame" />
-            <img src={photo7} alt="Photo 7" className="gallery-photo full-frame" />
-            <img src={photo5} alt="Photo 5" className="gallery-photo tall-frame" />
-            <img src={photo6} alt="Photo 6" className="gallery-photo wide-tall-frame" />
+          <div className="gallery-masonry">
+            <div className="gallery-item"><img src={gallery1} alt="Gallery 1" /></div>
+            <div className="gallery-item"><img src={gallery2} alt="Gallery 2" /></div>
+            <div className="gallery-item"><img src={photo2} alt="Photo 2" /></div>
+            <div className="gallery-item"><img src={gallery4} alt="Gallery 4" /></div>
+            <div className="gallery-item"><img src={photo3} alt="Photo 3" /></div>
+            <div className="gallery-item"><img src={gallery5} alt="Gallery 5" /></div>
+            <div className="gallery-item"><img src={photo4} alt="Photo 4" /></div>
+            <div className="gallery-item"><img src={photo1} alt="Photo 1" /></div>
+            <div className="gallery-item"><img src={photo5} alt="Photo 5" /></div>
+            <div className="gallery-item"><img src={gallery3} alt="Gallery 3" /></div>
+            <div className="gallery-item"><img src={photo6} alt="Photo 6" /></div>
           </div>
         </section>
 
