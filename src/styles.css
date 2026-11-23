@@ -1250,7 +1250,7 @@ img.portrait { object-position: center 60%; }
     display: block;
     background: #000;
     aspect-ratio: 9/16;
-    object-fit: cover;
+    object-fit: contain;
     outline: none;
 }
 
@@ -1338,4 +1338,5 @@ img.portrait { object-position: center 60%; }
 .script-signoff .nickname {
     font-size: 1em;
 }
+
 
