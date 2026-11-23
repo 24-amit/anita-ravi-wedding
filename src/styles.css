@@ -133,20 +133,26 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(ellipse at center, rgba(74, 28, 52, 0.35) 0, rgba(33, 11, 24, 0.65) 55%, rgba(22, 6, 16, 0.95) 100%), url("/src/assets/intro-bg.png") no-repeat center center;
+    padding: 30px 20px;
+    background: radial-gradient(ellipse at center, rgba(74, 28, 52, 0.35) 0, rgba(33, 11, 24, 0.65) 55%, rgba(22, 6, 16, 0.95) 100%), url("./assets/intro-bg.png") no-repeat center center;
     background-size: cover;
     background-position: center center;
     background-color: #160610;
-    transition: opacity .8s
+    transition: opacity .8s;
+    overflow-y: auto;
 }
 
 .intro-glow {
     position: absolute;
-    width: min(78vw, 620px);
-    aspect-ratio: 1;
-    border: 1px solid #d8b77a30;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(85vw, 540px);
+    height: min(85vw, 540px);
     border-radius: 50%;
-    box-shadow: 0 0 100px #c08a4930, inset 0 0 100px #c08a4915
+    background: radial-gradient(circle at center, rgba(216, 183, 122, 0.16) 0%, rgba(216, 183, 122, 0.04) 50%, rgba(0, 0, 0, 0) 75%);
+    box-shadow: 0 0 140px rgba(192, 138, 73, 0.22);
+    pointer-events: none;
 }
 
 .intro-ornament {
@@ -300,7 +306,9 @@ button {
 
 .hero-subtitle {
     font: italic 22px 'Cormorant Garamond';
-    color: #e8d7cb
+    color: #e8d7cb;
+    margin: 14px auto 20px;
+    max-width: 300px;
 }
 
 .hero-rule {

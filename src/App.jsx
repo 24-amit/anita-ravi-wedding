@@ -171,7 +171,7 @@ function App() {
         <nav className={menuOpen ? "nav-links show" : "nav-links"}>
           {navItems.map(([name, href]) => (
             <a key={name} href={href} onClick={() => setMenuOpen(false)}>
-              <span className="nav-ornament">✦</span> {name}
+              {name}
             </a>
           ))}
         </nav>
