@@ -17,11 +17,13 @@ import {
 } from "lucide-react";
 import groomImg from "./assets/groom.jpg";
 import brideImg from "./assets/bride.jpg";
-import gallery1 from "./assets/gallery1.jpg";
-import gallery2 from "./assets/gallery2.jpg";
-import gallery3 from "./assets/gallery3.jpg";
-import gallery4 from "./assets/gallery4.jpg";
-import gallery5 from "./assets/gallery5.jpg";
+import photo1 from "./assets/photo1.jpg";
+import photo2 from "./assets/photo2.jpg";
+import photo3 from "./assets/photo3.jpg";
+import photo4 from "./assets/photo4.jpg";
+import photo5 from "./assets/photo5.jpg";
+import photo6 from "./assets/photo6.jpg";
+import photo7 from "./assets/photo7.jpg";
 
 const weddingDate = new Date("2026-12-11T16:15:00+05:30");
 const events = [
@@ -316,11 +318,13 @@ function App() {
             A place for your favourite memories together.
           </p>
           <div className="gallery-grid">
-            <img src={gallery1} alt="Gallery 1" className="gallery-photo tall-left" />
-            <img src={gallery2} alt="Gallery 2" className="gallery-photo normal-top" />
-            <img src={gallery3} alt="Gallery 3" className="gallery-photo normal-bottom" />
-            <img src={gallery4} alt="Gallery 4" className="gallery-photo tall-right" />
-            <img src={gallery5} alt="Gallery 5" className="gallery-photo full-wide" />
+            <img src={photo1} alt="Gallery 1" className="gallery-photo gallery-photo-1" />
+            <img src={photo2} alt="Gallery 2" className="gallery-photo gallery-photo-2" />
+            <img src={photo3} alt="Gallery 3" className="gallery-photo gallery-photo-3" />
+            <img src={photo4} alt="Gallery 4" className="gallery-photo gallery-photo-4" />
+            <img src={photo7} alt="Gallery 7" className="gallery-photo gallery-photo-7" />
+            <img src={photo5} alt="Gallery 5" className="gallery-photo gallery-photo-5" />
+            <img src={photo6} alt="Gallery 6" className="gallery-photo gallery-photo-6" />
           </div>
         </section>
 
