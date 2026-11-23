@@ -1204,44 +1204,47 @@ img.portrait { object-position: center 60%; }
     .nav-links {
         display: none;
         position: absolute;
-        top: 62px;
-        left: 0;
-        right: 0;
-        background: linear-gradient(180deg, rgba(33, 11, 24, 0.98) 0%, rgba(20, 6, 14, 0.99) 100%);
+        top: 65px;
+        right: 15px;
+        left: auto;
+        width: 210px;
+        background: rgba(30, 10, 22, 0.75);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
-        padding: 10px 0 15px;
-        border-bottom: 2px solid var(--gold);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+        padding: 6px 0;
+        border: 1px solid rgba(216, 183, 122, 0.4);
+        border-radius: 12px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), inset 0 0 15px rgba(216, 183, 122, 0.05);
         gap: 0;
+        overflow: hidden;
     }
 
     .nav-links.show {
         display: flex !important;
-        animation: menuSlideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: menuSlideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
     .nav-links a {
-        padding: 16px 20px;
+        padding: 14px 18px;
         width: 100%;
         text-align: center;
         font-family: 'Cormorant Garamond', serif;
-        font-size: 17px;
-        letter-spacing: 4px;
+        font-size: 16px;
+        letter-spacing: 3px;
         font-weight: 600;
         color: #f5e8d8;
-        border-bottom: 1px solid rgba(216, 183, 122, 0.15);
+        border-bottom: 1px solid rgba(216, 183, 122, 0.12);
         transition: all 0.25s ease;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     .nav-links a .nav-ornament {
         color: var(--gold);
-        font-size: 10px;
+        font-size: 9px;
         opacity: 0.8;
     }
 
@@ -1252,7 +1255,7 @@ img.portrait { object-position: center 60%; }
     .nav-links a:hover,
     .nav-links a:active {
         color: #ffffff;
-        background: rgba(200, 165, 109, 0.18);
+        background: rgba(200, 165, 109, 0.2);
     }
 
     @keyframes menuSlideDown {
