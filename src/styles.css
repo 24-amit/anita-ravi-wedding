@@ -1215,3 +1215,66 @@ img.portrait { object-position: center 60%; }
 }
 
 
+
+.video-feature {
+    text-align: center;
+    background: #180610;
+    color: var(--cream);
+    padding: 60px 20px;
+}
+
+.video-feature .section-title {
+    color: var(--cream);
+}
+
+.video-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto 30px;
+    padding: 15px;
+    background: linear-gradient(145deg, #2a1020, #180610);
+    border: 1px solid #c8a56d80;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.video-frame {
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #c8a56d40;
+    position: relative;
+}
+
+.wedding-video {
+    width: 100%;
+    display: block;
+    background: #000;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    outline: none;
+}
+
+.video-ornament-left, .video-ornament-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold);
+    font-size: 24px;
+}
+
+.video-ornament-left { left: -30px; }
+.video-ornament-right { right: -30px; }
+
+.video-quote {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #bca4a3;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .video-ornament-left, .video-ornament-right { display: none; }
+    .video-wrapper { margin: 30px 10px 25px; padding: 10px; }
+}
+

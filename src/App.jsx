@@ -22,6 +22,7 @@ import gallery2 from "./assets/gallery2.jpg";
 import gallery3 from "./assets/gallery3.jpg";
 import gallery4 from "./assets/gallery4.jpg";
 import gallery5 from "./assets/gallery5.jpg";
+import weddingVideo from "./assets/wedding-video.mp4";
 
 const weddingDate = new Date("2026-12-11T16:15:00+05:30");
 const events = [
@@ -202,6 +203,24 @@ function App() {
           <div className="hero-bottom-note">
             A CELEBRATION OF LOVE · FAMILY · FOREVER
           </div>
+        </section>
+
+        <section className="video-feature section">
+          <Floral />
+          <p className="eyebrow">OUR STORY IN MOTION</p>
+          <h2 className="section-title">
+            A beautiful <i>journey</i>
+          </h2>
+          <div className="video-wrapper">
+            <div className="video-ornament-left">✦</div>
+            <div className="video-frame">
+              <video src={weddingVideo} controls preload="metadata" className="wedding-video" />
+            </div>
+            <div className="video-ornament-right">✦</div>
+          </div>
+          <p className="stars-quote video-quote">
+            "Two souls with but a single thought, two hearts that beat as one."
+          </p>
         </section>
 
         <section className="blessing section" id="story">
