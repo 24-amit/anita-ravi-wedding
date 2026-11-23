@@ -960,179 +960,6 @@ footer p {
     width: 17px
 }
 
-@media(max-width:700px) {
-    .topbar {
-        height: 62px
-    }
-
-    .mobile-menu {
-        display: block
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 62px;
-        left: 0;
-        right: 0;
-        background: #1d0915;
-        padding: 22px;
-        flex-direction: column;
-        gap: 22px;
-        border-bottom: 1px solid #d8b77a33
-    }
-
-    .nav-links.show {
-        display: flex
-    }
-
-    .section {
-        padding: 78px 20px
-    }
-
-    .hero {
-        min-height: calc(100vh - 62px);
-        padding: 85px 18px
-    }
-
-    .side-garland {
-        font-size: 19px;
-        width: 24px;
-        opacity: .45
-    }
-
-    .left-garland {
-        left: 2px
-    }
-
-    .right-garland {
-        right: 2px
-    }
-
-    .ganesha {
-        font-size: 48px
-    }
-
-    .hero-subtitle {
-        font-size: 18px
-    }
-
-    .hero-bottom-note {
-        font-size: 7px;
-        letter-spacing: 1.5px
-    }
-
-    .couple-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin-top: 40px
-    }
-
-    .ampersand {
-        margin: 8px
-    }
-
-    .ampersand span {
-        display: inline;
-        margin-left: 10px
-    }
-
-    .person-card {
-        max-width: 360px;
-        margin: auto;
-        width: 100%
-    }
-
-    .portrait {
-        height: 300px
-    }
-
-    .event-card {
-        grid-template-columns: 42px 1fr;
-        gap: 13px
-    }
-
-    .event-icon {
-        width: 40px;
-        height: 40px
-    }
-
-    .event-time {
-        grid-column: 2;
-        margin-top: -6px
-    }
-
-    .event-info h3 {
-        font-size: 25px
-    }
-
-    .venue-callout {
-        align-items: flex-start;
-        padding: 15px
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    .gallery-photo.tall-left,
-    .gallery-photo.tall-right,
-    .gallery-photo.normal-top,
-    .gallery-photo.normal-bottom,
-    .gallery-photo.full-wide {
-        grid-column: span 2;
-        grid-row: auto;
-        height: 300px;
-    }
-
-    .countdown {
-        gap: 6px
-    }
-
-    .count-box {
-        padding: 12px 2px
-    }
-
-    .count-box strong {
-        font-size: 27px
-    }
-
-    .count-box span {
-        font-size: 7px;
-        letter-spacing: .5px
-    }
-
-    .date-feature-inner {
-        padding: 42px 14px
-    }
-
-    .date-number {
-        font-size: 110px
-    }
-
-    .venue-card {
-        padding: 45px 16px
-    }
-
-    .venue-actions {
-        flex-direction: column;
-        align-items: stretch
-    }
-
-    .venue-actions>* {
-        justify-content: center
-    }
-
-    footer {
-    border-top: 1px solid #d8b77a33;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 7vw;
-    background: #180610
-}
-
 @media(prefers-reduced-motion:no-preference) {
 
     .event-card,
@@ -1385,6 +1212,86 @@ footer p {
     }
     footer p {
         text-align: center;
+    }
+}
+
+
+
+@media(max-width:700px) {
+    .topbar {
+        height: 62px
+    }
+
+    .mobile-menu {
+        display: block
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        right: 0;
+        background: #2a1020;
+        flex-direction: column;
+        padding: 20px 0;
+        border-bottom: 1px solid #d8b77a33;
+        box-shadow: 0 10px 30px #000a
+    }
+
+    .nav-links.show {
+        display: flex
+    }
+
+    .nav-links a {
+        padding: 15px;
+        width: 100%;
+        text-align: center
+    }
+
+    .hero-content {
+        padding: 0 15px
+    }
+
+    .script-title {
+        font-size: clamp(60px, 16vw, 90px);
+        margin: 5px 0
+    }
+
+    .side-garland {
+        display: none
+    }
+
+    .couple-grid {
+        grid-template-columns: 1fr;
+        gap: 40px
+    }
+
+    .ampersand {
+        transform: rotate(90deg)
+    }
+
+    .date-number {
+        font-size: 110px
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .gallery-photo.tall-left,
+    .gallery-photo.tall-right,
+    .gallery-photo.normal-top,
+    .gallery-photo.normal-bottom,
+    .gallery-photo.full-wide {
+        grid-column: span 2;
+        grid-row: auto;
+        height: 300px;
+    }
+
+    .countdown {
+        gap: 6px
     }
 }
 
