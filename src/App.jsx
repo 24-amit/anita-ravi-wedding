@@ -112,7 +112,7 @@ function App() {
     );
   };
   const copyAddress = async () => {
-    const address = "Dabur Colony, Tosham Bypass Road, Bhiwani, Haryana";
+    const address = "Dabur Colony, Tosham Bypass Road, Bhiwani, Haryana - 127021";
     try {
       await navigator.clipboard.writeText(address);
       setCopied(true);
@@ -142,7 +142,7 @@ function App() {
           >
             <span className="envelope-flap" />
             <span className="envelope-seal">
-              R <small>&</small> A
+              <span className="alt-a">R</span> <small>&</small> <span className="alt-a">A</span>
             </span>
             <span className="envelope-label">OPEN INVITATION</span>
           </button>
@@ -195,7 +195,7 @@ function App() {
             <p className="date-line">
               FRIDAY <b>·</b> 11 DECEMBER 2026
             </p>
-            <p className="date-small">Bhiwani, Haryana</p>
+            <p className="date-small">Bhiwani, Haryana - 127021</p>
             <a className="text-link" href="#story">
               EXPLORE THE INVITATION <ArrowDown size={14} />
             </a>
@@ -356,7 +356,7 @@ function App() {
             <p>
               Dabur Colony, Tosham Bypass Road
               <br />
-              Bhiwani, Haryana, India
+              Bhiwani, Haryana - 127021, India
             </p>
             <div className="venue-actions">
               <button className="outline-button" onClick={copyAddress}>
@@ -403,7 +403,7 @@ function App() {
             <br />
             Tosham Bypass Road, Dabur Colony
             <br />
-            Near Chara Mandi, Bhiwani (Haryana)
+            Near Chara Mandi, Bhiwani (Haryana) - 127021
           </p>
           <a className="phone-link" href="tel:+918295327700">
             <Phone size={15} /> +91 82953 27700 (Kamal Singh Jangra)
