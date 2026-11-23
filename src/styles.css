@@ -135,6 +135,7 @@ button {
     justify-content: center;
     background: radial-gradient(ellipse at center, rgba(74, 28, 52, 0.75) 0, rgba(33, 11, 24, 0.85) 55%, rgba(22, 6, 16, 0.95) 100%), url("/src/assets/gallery1.jpg") no-repeat center center;
     background-size: cover;
+    background-position: center 20%;
     transition: opacity .8s
 }
 
@@ -277,11 +278,16 @@ button {
 }
 
 .script-title {
-    font-size: clamp(76px, 13vw, 142px);
+    font-size: clamp(60px, 11vw, 142px);
     line-height: .95;
     color: var(--gold2);
     margin: 10px 0;
-    text-shadow: 0 4px 30px #0005
+    text-shadow: 0 4px 30px #0005;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0 10px;
 }
 
 .script-title em {
@@ -1254,8 +1260,10 @@ footer p {
     }
 
     .script-title {
-        font-size: clamp(60px, 16vw, 90px);
-        margin: 5px 0
+        font-size: clamp(48px, 12vw, 76px);
+        margin: 5px 0;
+        flex-direction: row;
+        gap: 0 6px;
     }
 
     .side-garland {
@@ -1294,4 +1302,6 @@ footer p {
         gap: 6px
     }
 }
+
+
 
